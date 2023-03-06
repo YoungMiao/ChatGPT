@@ -1,8 +1,6 @@
 <script setup lang='ts'>
 import { onMounted, ref } from 'vue'
-import { NSpin } from 'naive-ui'
 import { fetchChatConfig } from '@/api'
-import pkg from '@/../package.json'
 
 interface ConfigState {
   timeoutMs?: number
@@ -30,7 +28,7 @@ onMounted(() => {
   fetchConfig()
 })
 </script>
-
+<!--
 <template>
   <NSpin :show="loading">
     <div class="p-4 space-y-4">
@@ -59,4 +57,4 @@ onMounted(() => {
       <p>{{ $t("setting.socks") }}：{{ config?.socksProxy ?? '-' }}</p>
     </div>
   </NSpin>
-</template>
+</template> -->

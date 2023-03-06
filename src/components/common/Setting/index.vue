@@ -1,43 +1,37 @@
 <script setup lang='ts'>
-import { computed, ref } from 'vue'
-import { NCard, NModal, NTabPane, NTabs } from 'naive-ui'
-import General from './General.vue'
-import About from './About.vue'
-import { SvgIcon } from '@/components/common'
+// const props = defineProps<Props>()
 
-const props = defineProps<Props>()
+// const emit = defineEmits<Emit>()
 
-const emit = defineEmits<Emit>()
+// interface Props {
+//   visible: boolean
+// }
 
-interface Props {
-  visible: boolean
-}
+// interface Emit {
+//   (e: 'update:visible', visible: boolean): void
+// }
 
-interface Emit {
-  (e: 'update:visible', visible: boolean): void
-}
+// const active = ref('General')
 
-const active = ref('General')
+// const reload = ref(false)
 
-const reload = ref(false)
+// const show = computed({
+//   get() {
+//     return props.visible
+//   },
+//   set(visible: boolean) {
+//     emit('update:visible', visible)
+//   },
+// })
 
-const show = computed({
-  get() {
-    return props.visible
-  },
-  set(visible: boolean) {
-    emit('update:visible', visible)
-  },
-})
-
-function handleReload() {
-  reload.value = true
-  setTimeout(() => {
-    reload.value = false
-  }, 0)
-}
+// function handleReload() {
+//   reload.value = true
+//   setTimeout(() => {
+//     reload.value = false
+//   }, 0)
+// }
 </script>
-
+<!--
 <template>
   <NModal v-model:show="show" :auto-focus="false">
     <NCard role="dialog" aria-modal="true" :bordered="false" style="width: 100%; max-width: 640px">
@@ -61,4 +55,4 @@ function handleReload() {
       </NTabs>
     </NCard>
   </NModal>
-</template>
+</template> -->
